@@ -1,0 +1,104 @@
+// COLOR VARIABLES
+$color-primary: #343a3f;
+$color-secondary: #3c4249;
+
+// RESPOSIVE BREAKPOINTS
+// 120em  => 1920px
+// 85.38 em => 1366px
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+$bp-small-m: 25em; //400px
+$bp-small-s: 18.75em; // 300px
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sen:wght@400;700;800&display=swap');
+
+// MIXINS
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  // box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 10px/16px=62.5 -> 1rem = 10px
+
+  // @media only screen and (max-width: $bp-small) {
+  //   font-size: 50%; // 1rem = 10px, 8px/16px = 50%
+  // }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%; // 1rem = 10px, 8px/16px = 50%
+  }
+}
+
+body {
+  font-family: 'Sen', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-color: #2ed9ff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+// Utilities
+.heading-1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.todo__heading-1 {
+  font-size: 3rem;
+  margin: 4rem auto;
+  letter-spacing: 0.5rem;
+}
+
+.popup__heading-1 {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  letter-spacing: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.ml {
+  margin-left: 1rem;
+}
+
+.mr {
+  margin-right: 1rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mb-l {
+  margin-bottom: 5rem;
+}
+.fill {
+  width: 100%;
+}
+
+// Breakpoint
