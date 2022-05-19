@@ -1,0 +1,26 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Simple TODO List",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "Parcel build",
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwasi/TODO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwasi/TODO/issues"
+  },
+  "homepage": "https://github.com/cwasi/TODO#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "parcel": "^2.5.0"
+  }
+}
