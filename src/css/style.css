@@ -77,21 +77,25 @@ body {
       width: 90vw;
       height: 80vh; } }
   .todo__icon {
-    width: 1.5rem;
-    height: 1.5rem;
     background: none;
     border: none; }
+    .todo__icon--delete {
+      color: #ff4848;
+      font-size: 1.7rem;
+      transition: all 0.3s;
+      cursor: pointer; }
+      .todo__icon--delete:hover {
+        transform: translateY(-1px); }
     .todo__icon--list {
+      width: 1.5rem;
+      height: 1.5rem;
       margin: 0 1rem;
       fill: #7d8185; }
     .todo__icon svg {
       height: 100%;
       width: 100%;
       fill: #ff4848;
-      transition: all 0.3s;
       cursor: pointer; }
-      .todo__icon svg:hover {
-        transform: translateY(-1px); }
     .todo__icon--close:link, .todo__icon--close:visited {
       color: #7d8185;
       position: absolute;
@@ -266,9 +270,8 @@ body {
     overflow: hidden; }
   .form__textarea {
     resize: none;
-    width: 99%;
-    height: 10rem;
-    padding: 0; }
+    width: 95%;
+    height: 10rem; }
   .form__textarea::-webkit-scrollbar {
     width: 0.5rem; }
   .form__textarea::-webkit-scrollbar-track {
