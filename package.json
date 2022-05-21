@@ -1,7 +1,7 @@
 {
   "name": "todo",
   "version": "1.0.0",
-  "description": "Simple TODO List",
+  "description": "Simple TODO Application",
   "source": "index.html",
   "scripts": {
     "start": "parcel index.html",
