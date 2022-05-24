@@ -9,10 +9,10 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 50%; } }
+      font-size: 55%; } }
 
 body {
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   font-weight: 400;
   color: #fff;
   background-color: #2ed9ff;
@@ -23,7 +23,7 @@ body {
   height: max-content; }
 
 .heading-1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center; }
@@ -72,7 +72,7 @@ body {
   grid-template-rows: repeat(2, -webkit-max-content) 1fr;
   grid-template-rows: repeat(2, max-content) 1fr;
   justify-items: center; }
-  @media only screen and (max-width: 23.75em) {
+  @media only screen and (max-width: 26.75em) {
     .todo {
       width: 90vw;
       height: 80vh; } }
@@ -178,8 +178,8 @@ body {
   align-items: center;
   justify-content: start; }
   .btn-add {
-    margin: 0 1.5rem;
     padding: 0.5rem 0;
+    width: 92%;
     font-size: 1.5rem;
     text-decoration: none;
     border: 0.2rem solid #2d2d2d; }
@@ -189,6 +189,9 @@ body {
   .btn:hover {
     background-color: #3c4249; }
 
+.hidden {
+  display: none; }
+
 .popup {
   position: fixed;
   top: 0;
@@ -197,8 +200,8 @@ body {
   width: 100%;
   z-index: 3000;
   background-color: #343a3f;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: all 0.3s; }
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
     .popup {

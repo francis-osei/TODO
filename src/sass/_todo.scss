@@ -10,7 +10,7 @@
   grid-template-rows: repeat(2, max-content) 1fr;
   justify-items: center;
 
-  @media only screen and (max-width: 23.75em) {
+  @media only screen and (max-width: 26.75em) {
     width: 90vw;
     height: 80vh;
   }
@@ -165,9 +165,8 @@
   justify-content: start;
 
   &-add {
-    margin: 0 1.5rem;
     padding: 0.5rem 0;
-
+    width: 92%;
     font-size: 1.5rem;
     text-decoration: none;
     border: 0.2rem solid #2d2d2d;
@@ -184,6 +183,10 @@
 
 // popup
 
+.hidden {
+  display: none;
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -192,8 +195,8 @@
   width: 100%;
   z-index: 3000;
   background-color: $color-primary;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: all 0.3s;
   @supports (
     (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))

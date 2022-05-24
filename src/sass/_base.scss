@@ -12,7 +12,7 @@ $bp-small: 37.5em; // 600px;
 $bp-small-m: 25em; //400px
 $bp-small-s: 18.75em; // 300px
 // FONTS
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sen:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sen:wght@400;700;800&display=swap");
 
 // MIXINS
 @mixin absCenter {
@@ -38,12 +38,12 @@ html {
   // }
 
   @media only screen and (max-width: $bp-small) {
-    font-size: 50%; // 1rem = 10px, 8px/16px = 50%
+    font-size: 55%; // 1rem = 10px, 8px/16px = 50%
   }
 }
 
 body {
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   font-weight: 400;
   color: #fff;
   background-color: #2ed9ff;
@@ -56,7 +56,7 @@ body {
 
 // Utilities
 .heading-1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;

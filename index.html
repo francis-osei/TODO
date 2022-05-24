@@ -17,14 +17,12 @@
         <h1 class="todo__heading-1 heading-1">todo</h1>
       </div>
 
-      <div class="fill">
-        <a href="#popup" class="btn btn-add">
-          <svg class="todo__icon todo__icon--list">
-            <use xlink:href="src/img/icons.svg#icon-list"></use>
-          </svg>
-          <span>Add Task</span>
-        </a>
-      </div>
+      <button class="btn btn-add" id="openModal">
+        <svg class="todo__icon todo__icon--list">
+          <use xlink:href="src/img/icons.svg#icon-list"></use>
+        </svg>
+        <span>Add Task</span>
+      </button>
 
       <div class="todo__container" id="container">
         <div class="todo__c">
@@ -60,10 +58,10 @@
       </div>
     </div>
     <!-- popup -->
-    <div class="popup" id="popup">
+    <div class="popup hidden" id="popup">
       <div class="popup__content">
         <div class="popup__title">
-          <a href="#todo" class="todo__icon--close">&times;</a>
+          <a href="#todo" class="todo__icon--close" id="btnClose">&times;</a>
           <!-- <h1 class="popup__heading-1 heading-1">Add Task</h1> -->
         </div>
         <form class="form" id="form">
