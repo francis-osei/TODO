@@ -1,6 +1,6 @@
 # TODO
 
-"**TODO**" is a to-do list and a task manager that organise your day. Input the list of things you need to complete, the things that you want to do or buy and mark them as complete.
+"**TODO**" is a to-do list and a task manager that organize your day. Input the list of things you need to complete, the things that you want to do or buy and mark them as complete.
 
 <br>
 
@@ -18,9 +18,6 @@
 ---
 [See Live Demo](https://cwasi-todo.netlify.app)
  
- <br>
-
----
 ### Author 👤
 ---
 * GitHub: [@cwasi](https://github.com/cwasi)
